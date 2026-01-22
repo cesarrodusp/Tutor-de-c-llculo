@@ -6,7 +6,7 @@ import google.generativeai as genai
 # Opción B: Usar st.secrets (Ideal para producción)
 API_KEY = "TU_API_KEY_AQUÍ" 
 
-genai.configure(api_key=API_KEY)
+genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
 
 # Instrucciones detalladas para el comportamiento de la IA
 INSTRUCCIONES = """
